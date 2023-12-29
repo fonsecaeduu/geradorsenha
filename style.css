@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #110514;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#site-title {
+    margin: 0;
+    margin-bottom: 50px;
+    color: rgb(212, 0, 0);
+    text-shadow: 0px 0px 10px rgb(255, 0, 0); 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.spn {
+    width: 200px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+#button {
+    background-color: rgb(212, 0, 0);
+    color: rgb(61, 0, 0);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(148, 0, 0, 0.5);
+    transition: 200ms ease-in-out;
+}
+
+#button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 15px rgb(255, 0, 0);
+}
+
+#container-password {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    transition: all 300ms ease-in-out;
+}
+
+.title {
+    color: white;
+}
+
+
+.password {
+    color: white;
+    background: rgba(31, 31, 31, 0.5);
+    padding: 20px;
+    min-width: 200px;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(126, 0, 0, 0.521);
+    transition: all 300ms ease-in-out;
+}
+
+.password:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 10px rgb(126, 0, 0);
+}
+
+.tooltip {
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+#container-password:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+[type="range"] {
+    appearance: none;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+}
+
+[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background-color: red;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(255, 0, 0, 0.500);
+}
+
+/* okay achei */
