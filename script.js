@@ -1,6 +1,3 @@
-// let é a fornma que cria a variável
-// O que vem depois é o nome da variável
-// No js pode ser var ou let do que eu me lembre
 let sliderElement = document.querySelector('#slider')
 let buttonElement = document.querySelector('#button')
 
@@ -13,9 +10,7 @@ let charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@!#
 let novaSenha = ''
 
 sizePassword.innerHTML = sliderElement.value;
-// Aqui diz que dentro do HTML (innerHTML) o objeto indicado por "sizePassword"
-// Vai receber como valor, o valor do elemento "sliderElement" (O slider)
-// Significa que o valor do slider vai ser atribuído ao objeto "sizePassword"
+
 slider.oninput = function(){
     sizePassword.innerHTML = this.value;
 }
